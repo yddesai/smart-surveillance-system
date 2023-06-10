@@ -18,8 +18,7 @@ def send_notification(message):
         print("Notification sent!")
     except (NoCredentialsError, PartialCredentialsError) as e:
         print(f"Error in sending notification: {e}")
-    # os.system(f"sshpass -p '3141' ssh ydesai@10.0.0.231 -p 22 'python notify.py'")
-    # os.system
+  
 
 
 send_notification("Intruder detected!")
